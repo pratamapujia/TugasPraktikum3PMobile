@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TugasPraktikum3</string>
+    <string name="nama">Nama :</string>
+    <string name="jurusan">Jurusan :</string>
+    <string name="atribut_kuliah">Atribut Kuliah :</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="sistem_informasi">Sistem Informasi</string>
+    <string name="informatika">Informatika</string>
+    <string name="laptop">Laptop</string>
+    <string name="handphone">Handphone</string>
+    <string name="buku">Buku</string>
+    <string name="kirim">Kirim</string>
+    <string name="cancel">Cancel</string>
+    <string name="pratama_puji_ariyanto_18082010016">Pratama Puji Ariyanto - 18082010016</string>
+    <string name="upn">upn</string>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEFA0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/nama"
+        android:textColor="#1B262C"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtJurusan"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/jurusan"
+        android:textColor="#1B262C"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNama" />
+
+    <TextView
+        android:id="@+id/txtAK"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/atribut_kuliah"
+        android:textColor="#1B262C"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJurusan" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/masukkan_nama"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="#1B262C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNama"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="240dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtJurusan"
+        app:layout_constraintTop_toBottomOf="@+id/editNama">
+
+        <RadioButton
+            android:id="@+id/rbsi"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="@string/sistem_informasi"
+            android:textColor="#1B262C"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbinformatika"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="@string/informatika"
+            android:textColor="#1B262C"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbLaptop"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/laptop"
+        android:textColor="#1B262C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAK"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/cbHandphone"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/handphone"
+        android:textColor="#1B262C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbLaptop" />
+
+    <CheckBox
+        android:id="@+id/cbBuku"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/buku"
+        android:textColor="#1B262C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHandphone" />
+
+    <ImageButton
+        android:id="@+id/btnKirim"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FFEFA0"
+        android:contentDescription="@string/kirim"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBuku"
+        app:srcCompat="@drawable/direct"
+        tools:srcCompat="@drawable/direct" />
+
+    <ImageButton
+        android:id="@+id/btnCancel"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFEFA0"
+        android:contentDescription="@string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBuku"
+        app:srcCompat="@drawable/x_button"
+        tools:srcCompat="@drawable/x_button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/pratama_puji_ariyanto_18082010016"
+        android:textColor="#1B262C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="464dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        android:backgroundTint="#FFEFA0"
+        android:contentDescription="@string/upn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_upn_jatim_baru"
+        tools:srcCompat="@drawable/logo_upn_jatim_baru" />
+</androidx.constraintlayout.widget.ConstraintLayout>
